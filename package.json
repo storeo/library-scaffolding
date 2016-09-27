@@ -9,7 +9,7 @@
         "url": "<Project git url>"
     },
     "scripts": {
-        "dev": "node bin/www",
+        "dev": "NODE_PORT=$PORT node bin/www",
         "build": "NODE_ENV=production webpack"
     },
     "license": "MIT",
@@ -18,6 +18,8 @@
         "url": "<Project issues url>"
     },
     "dependencies": {
+    },
+    "peerDependencies": {
     },
     "keywords": [
     ],
