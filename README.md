@@ -1,2 +1,2 @@
-# library-scaffolding
-Project scaffolding for a React library in Webpack
+# Scaffolding
+Clone this repo and use it as a scaffolding for any React library development
