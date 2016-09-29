@@ -1,5 +1,5 @@
 # Scaffolding
-Clone this repo and use it as a scaffolding for any new React library project. The repo has been configured to work with webpack(ES6 and hot loading enabled).
+Download this repo and use it as a scaffolding for any new React library project. The repo has been configured to work with webpack(ES6 and hot loading enabled).
 
 # Code structure
 - **bin/www/** starts the webpack dev server for running the project during development
@@ -11,7 +11,10 @@ Clone this repo and use it as a scaffolding for any new React library project. T
 
 # Setup
 Say the react library to be exposed is in a file **somecomponent.js**
-- Clone the repo using `git clone https://github.com/storeo/scaffolding.git`
+- Download this repo and unzip it in a local directory
+- Navigate to the directory and run `git init` to initialize the new repo
+- `git remote add origin <repo-url>` where repo url is the url of the repo to which the new library is to be pushed
+- Edit **package.json** - *name*, *author*, *description*, *repository.url*, *bugs.url*, *dependencies*, *peerDependencies*, *keywords* etc.
 - Run `npm install`
 - Copy **somecomponent.js** into **src/js**
 - If there are any associated styles for the library, keep them as SASS files(.scss) in **src/stylesheets**. Import styles in **somecomponent.js** using `import ../stylesheets/<stylefile>`
@@ -19,7 +22,7 @@ Say the react library to be exposed is in a file **somecomponent.js**
 - Render the results with `ReactDOM.render(<SomeComponent />, document.querySelector("#app-container"))`
 - Open **webpack/base.config.js** and replace *<Project Title>* in **WebpackNotifierPlugin** options with the name of your project
 - Open **webpack/production.config.js** and replace *'./relative/path/to/libfile/in/src/js'* in entry config with *./src/js/somecomponent.js*
-- Edit **package.json** - *name*, *author*, *description*, *repository.url*, *bugs.url*, *dependencies*, *peerDependencies*, *keywords* etc.
+- Edit **README.md**
 
 # Running
 - For development testing, execute `npm run dev` in the project directory. This will start a webpack dev server in port *9000*. `http://localhost:9000` will load the **index.html** file which will in turn load and execute the **src/index.js** file.
